@@ -1,6 +1,6 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.yababoon.app" version="1.0.0">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.yababoon.app" version="1.2.0">
   <name>Ridiculousness Daily</name>
-  <description>Hello World sample application that responds to the deviceready event.</description>
+  <description>Ridiculousness daily</description>
   <author href="http://yababoon.com" email="info@yababoon.com">Ridiculousness Daily</author>
   <content src="index.html"/>
   <preference name="KeepRunning" value="false" />
