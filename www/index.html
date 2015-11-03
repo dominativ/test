@@ -39,7 +39,43 @@
         </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
-         
+         <script type="text/javascript" charset="utf-8">
+
+ function init() {
+              document.addEventListener("deviceready", onDeviceReady, false);
+            }
+
+            function checkConnection() {
+                var networkState = navigator.network.connection.type;
+
+                var states = {};
+                states[Connection.UNKNOWN]  = 'Unknown connection';
+                states[Connection.ETHERNET] = 'Ethernet connection';
+                states[Connection.WIFI]     = 'WiFi connection';
+                states[Connection.CELL_2G]  = 'Cell 2G connection';
+                states[Connection.CELL_3G]  = 'Cell 3G connection';
+                states[Connection.CELL_4G]  = 'Cell 4G connection';
+                states[Connection.NONE]     = 'No network connection';
+
+                alert('Connection type: ' + states[networkState]);
+                //navigator.notification.alert('Connection type: ' + states[networkState]);
+            }
+
+
+    // Wait for device API libraries to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // device APIs are available
+    //
+
+	
+    function onDeviceReady() {
+         var ref = window.open('http://yababoon.com', '_self', 'location=yes,enableViewportScale=yes');
+
+    }
+
+    </script>
         <script type="text/javascript">
             app.initialize();
         </script>
